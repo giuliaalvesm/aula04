@@ -32,3 +32,15 @@ if nota >= 7 and frequencia >= 75:
     print('Aprovado')
 else:
     print('Reprovado')
+
+#Exemplo IFs aninhados 2
+nota = float(input('Insira a nota: '))
+frequencia = float(input('Informe a frequência: '))
+if nota >= 7:
+    #Aprovado por nota, mas precisa checar a frequência
+    if frequencia >= 75:
+        print('Aluno aprovado por Nota e Frequência')
+    else:
+        print('Aluno reprovado por Frequência baixa')
+else:
+    print('Aluno reprovado por nota baixa')
